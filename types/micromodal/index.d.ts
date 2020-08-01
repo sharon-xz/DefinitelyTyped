@@ -1,6 +1,6 @@
-// Type definitions for micromodal 0.3
+// Type definitions for micromodal 0.4.6
 // Project: https://github.com/ghosh/micromodal#readme
-// Definitions by: Wayne Carson <https://github.com/wcarson>
+// Definitions by: sharon-xz
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /**
@@ -11,7 +11,7 @@ export interface MicroModalConfig {
     onShow?: (modal?: HTMLElement) => void;
 
     /** This is fired when the modal is closing. */
-    onClose?: (modal?: HTMLElement) => void;
+    onClose?: (modal?: HTMLElement, activeElement?: HTMLElement, event?: MouseEvent | TouchEvent) => void;
 
     /** Custom data attribute to open modal. Default is data-micromodal-trigger. */
     openTrigger?: string;
